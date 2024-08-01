@@ -4,18 +4,38 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
-    flex: 1;
     width: 90%;
     max-width: 800px;
+    height: 90vh; /* Ajustement pour permettre le défilement */
     margin: 0 auto;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /* Permet le défilement vertical */
+    background-color: #121212; /* Couleur de fond ajoutée */
+    scrollbar-width: thin;
+    scrollbar-color: #1DB954 #121212;
+}
+
+/* Styles pour la barre de défilement */
+.container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    border-radius: 10px;
+    border: 3px solid #121212;
 }
 
 h1 {
@@ -62,6 +82,7 @@ footer {
     padding: 10px;
     background: #282828;
     color: #ccc;
+    width: 100%;
 }
 
 footer a {
@@ -75,5 +96,11 @@ footer a {
     }
     .audio-list p {
         font-size: 1em;
+    }
+    .container {
+        padding: 10px;
+    }
+    .audio-list li {
+        padding: 10px;
     }
 }
