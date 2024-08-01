@@ -60,9 +60,9 @@
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
-            <li>
+            <li class="lyria">
                 <p>Lyria - La vibration</p>
-                <audio controls id="lyria-audio">
+                <audio controls>
                     <source src="inexistant.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
@@ -116,13 +116,12 @@
         </footer>
     </div>
     <script>
-        document.getElementById('lyria-audio').addEventListener('play', function() {
+        document.querySelector('.lyria').addEventListener('click', function() {
             Swal.fire({
                 icon: 'error',
                 title: 'Désolé, il y a eu un problème',
                 text: 'Je n\'ai pas pu enregistrer ta musique... Mais de toute façon, t\'as tellement de talent que ça doit pas te prendre très longtemps à reproduire !',
             });
-            this.pause();
         });
     </script>
 </body>
