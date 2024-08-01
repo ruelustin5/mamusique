@@ -4,17 +4,18 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+    overflow-y: auto;
 }
 
 h1 {
@@ -35,6 +36,9 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .audio-list li:hover {
@@ -55,13 +59,21 @@ audio {
 footer {
     margin-top: 20px;
     text-align: center;
-}
-
-footer p {
+    padding: 10px;
+    background: #282828;
     color: #ccc;
 }
 
 footer a {
     color: #1DB954;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .audio-list p {
+        font-size: 1em;
+    }
 }
