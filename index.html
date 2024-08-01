@@ -42,7 +42,7 @@
             <li>
                 <p>Raphaël</p>
                 <audio controls>
-                    <source src="raphael.wav" type="audio/wav">
+                    <source src="raphael.mp3" type="audio/mpeg">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
@@ -56,13 +56,13 @@
             <li>
                 <p>Anonyme - Zoulili</p>
                 <audio controls>
-                    <source src="raphael.wav" type="audio/wav">
+                    <source src="anonyme2.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li class="lyria">
                 <p>Lyria - La vibration</p>
-                <audio controls>
+                <audio controls id="lyria-audio">
                     <source src="inexistant.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
@@ -116,7 +116,17 @@
         </footer>
     </div>
     <script>
-        document.querySelector('.lyria').addEventListener('click', function() {
+        document.querySelector('.lyria').addEventListener('click', function(event) {
+            event.stopPropagation();
+            Swal.fire({
+                icon: 'error',
+                title: 'Désolé, il y a eu un problème',
+                text: 'Je n\'ai pas pu enregistrer ta musique... Mais de toute façon, t\'as tellement de talent que ça doit pas te prendre très longtemps à reproduire !',
+            });
+        });
+
+        document.querySelector('#lyria-audio').addEventListener('click', function(event) {
+            event.stopPropagation();
             Swal.fire({
                 icon: 'error',
                 title: 'Désolé, il y a eu un problème',
