@@ -62,10 +62,12 @@
             </li>
             <li class="lyria">
                 <p>Lyria - La vibration</p>
-                <audio controls id="lyria-audio">
-                    <source src="inexistant.wav" type="audio/wav">
-                    Votre navigateur ne supporte pas l'élément audio.
-                </audio>
+                <div class="fake-audio-control" onclick="showErrorPopup()">
+                    <div class="play-button"></div>
+                    <div class="audio-timeline">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
             </li>
             <li>
                 <p>Éclipse</p>
@@ -116,23 +118,13 @@
         </footer>
     </div>
     <script>
-        document.querySelector('.lyria').addEventListener('click', function(event) {
-            event.stopPropagation();
+        function showErrorPopup() {
             Swal.fire({
                 icon: 'error',
                 title: 'Désolé, il y a eu un problème',
                 text: 'Je n\'ai pas pu enregistrer ta musique... Mais de toute façon, t\'as tellement de talent que ça doit pas te prendre très longtemps à reproduire !',
             });
-        });
-
-        document.querySelector('#lyria-audio').addEventListener('click', function(event) {
-            event.stopPropagation();
-            Swal.fire({
-                icon: 'error',
-                title: 'Désolé, il y a eu un problème',
-                text: 'Je n\'ai pas pu enregistrer ta musique... Mais de toute façon, t\'as tellement de talent que ça doit pas te prendre très longtemps à reproduire !',
-            });
-        });
+        }
     </script>
 </body>
 </html>
