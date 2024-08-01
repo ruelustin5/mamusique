@@ -5,37 +5,18 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
-    height: 90vh; /* Ajustement pour permettre le défilement */
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    overflow-y: auto; /* Permet le défilement vertical */
-    background-color: #121212; /* Couleur de fond ajoutée */
-    scrollbar-width: thin;
-    scrollbar-color: #1DB954 #121212;
-}
-
-/* Styles pour la barre de défilement */
-.container::-webkit-scrollbar {
-    width: 12px;
-}
-
-.container::-webkit-scrollbar-track {
-    background: #121212;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background-color: #1DB954;
-    border-radius: 10px;
-    border: 3px solid #121212;
+    overflow-y: auto;
 }
 
 h1 {
@@ -67,8 +48,9 @@ h1 {
 
 .audio-list p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Taille de police augmentée */
     font-weight: bold;
+    text-align: center;
 }
 
 audio {
@@ -95,12 +77,15 @@ footer a {
         font-size: 2em;
     }
     .audio-list p {
-        font-size: 1em;
+        font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
     }
     .container {
         padding: 10px;
     }
     .audio-list li {
         padding: 10px;
+    }
+    audio {
+        height: 40px; /* Ajustement pour les petits écrans */
     }
 }
