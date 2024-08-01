@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Augmenté pour les écrans mobiles */
     margin-bottom: 20px;
     text-align: center;
     color: #1DB954;
@@ -34,7 +34,7 @@ h1 {
 .audio-list li {
     background: #282828;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 20px; /* Augmenté pour les écrans mobiles */
     border-radius: 8px;
     transition: background 0.3s;
     display: flex;
@@ -48,7 +48,7 @@ h1 {
 
 .audio-list p {
     margin: 0;
-    font-size: 1.5em; /* Taille de police augmentée */
+    font-size: 1.5em; /* Augmenté pour les écrans mobiles */
     font-weight: bold;
     text-align: center;
 }
@@ -56,6 +56,7 @@ h1 {
 audio {
     width: 100%;
     margin-top: 10px;
+    height: 50px; /* Augmenté pour les écrans mobiles */
 }
 
 footer {
@@ -74,18 +75,18 @@ footer a {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2em;
+        font-size: 3em; /* Augmenté pour les petits écrans */
     }
     .audio-list p {
-        font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
+        font-size: 2em; /* Augmenté pour les petits écrans */
     }
     .container {
-        padding: 10px;
+        padding: 15px; /* Augmenté pour les petits écrans */
     }
     .audio-list li {
-        padding: 10px;
+        padding: 15px; /* Augmenté pour les petits écrans */
     }
     audio {
-        height: 40px; /* Ajustement pour les petits écrans */
+        height: 60px; /* Augmenté pour les petits écrans */
     }
 }
