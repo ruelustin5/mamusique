@@ -5,48 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musique des campeurs</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Musique des campeurs</h1>
-        <ul class="mp3-list">
+        <h1>Spotify des campeurs</h1>
+        <ul class="audio-list">
             <li>
-                <p><bold>Justin R. - Remix de Game of Thrones</bold></p>
+                <p>Justin Ruel - Faux Espoir</p>
                 <audio controls>
-                    <source src="justin_r.wav" type="audio/wav">
+                    <source src="Faux Espoir - Justin Ruel.mp3" type="audio/mpeg">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li>
-                <p><bold>Daphné - Super musique</bold></p>
+                <p>Esteban Bélanger</p>
+                <audio controls>
+                    <source src="esteban_belanger.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Emmaminie - Le bonhomme déchire tout</p>
+                <audio controls>
+                    <source src="emmaminie.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Dylane Lachance - La musique fantastique</p>
+                <audio controls>
+                    <source src="dylane_lachance.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Raphaël</p>
+                <audio controls>
+                    <source src="raphael.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Musique des campeurs - Super musique douce</p>
+                <audio controls>
+                    <source src="musique_des_campeurs.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Anonyme - Zoulili</p>
+                <audio controls>
+                    <source src="raphael.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Lyria - La vibration</p>
+                <audio controls>
+                    <source src="inexistant.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Désolé, il y a eu un problème',
+                        text: 'Je n\'ai pas pu enregistrer ta musique... Mais de toute façon, t\'as tellement de talent que ça doit pas te prendre très longtemps à reproduire !',
+                    });
+                </script>
+            </li>
+            <li>
+                <p>Éclipse</p>
+                <audio controls>
+                    <source src="animatrice.wav" type="audio/wav">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </li>
+            <li>
+                <p>Daphné - Super musique</p>
                 <audio controls>
                     <source src="daphne.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li>
-                <p><bold>Olivier - Pads</bold></p>
+                <p>Olivier - Pads</p>
                 <audio controls>
                     <source src="olivier.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li>
-                <p><bold>Océane L.</bold></p>
+                <p>Océane L.</p>
                 <audio controls>
                     <source src="oceane_l.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li>
-                <p><bold>Ulrik L.</bold></p>
+                <p>Ulrik L.</p>
                 <audio controls>
                     <source src="ulrik_l.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
                 </audio>
             </li>
             <li>
-                <p><bold>Anonyme</bold></p>
+                <p>Anonyme</p>
                 <audio controls>
                     <source src="anonyme.wav" type="audio/wav">
                     Votre navigateur ne supporte pas l'élément audio.
@@ -54,6 +118,9 @@
             </li>
             <!-- Ajoutez plus d'éléments ici -->
         </ul>
+        <footer>
+            <p>Pour quelconque raison que vous vouliez communiquer avec moi : <a href="mailto:ruelustin5@gmail.com">ruelustin5@gmail.com</a></p>
+        </footer>
     </div>
 </body>
 </html>
