@@ -58,55 +58,6 @@ audio {
     margin-top: 10px;
 }
 
-.fake-audio-control {
-    width: 100%;
-    margin-top: 10px;
-    background: #404040;
-    border-radius: 8px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.fake-audio-control .play-button {
-    width: 30px;
-    height: 30px;
-    background: #1DB954;
-    border-radius: 50%;
-    position: relative;
-}
-
-.fake-audio-control .play-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid white;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-}
-
-.fake-audio-control .audio-timeline {
-    flex: 1;
-    height: 5px;
-    background: #606060;
-    margin-left: 10px;
-    position: relative;
-    border-radius: 5px;
-}
-
-.fake-audio-control .audio-timeline .progress-bar {
-    width: 30%;
-    height: 100%;
-    background: #1DB954;
-    border-radius: 5px;
-}
-
 footer {
     margin-top: 20px;
     text-align: center;
